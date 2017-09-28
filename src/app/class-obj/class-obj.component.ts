@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-class-obj',
   templateUrl: './class-obj.component.html',
@@ -15,7 +16,8 @@ export class ClassObjComponent implements OnInit {
 
   isTrue = true ;
   name = "Anup";
-
+  
+  array = [1,100,54,89];
   constructor() { }
 
   ngOnInit() {

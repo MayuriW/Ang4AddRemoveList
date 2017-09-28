@@ -10,11 +10,6 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-dtFrm = {
-    eml: '',
-    pass: ''
-  };
-
  users : any[];
  constructor(db:AngularFireDatabase)
  {
@@ -25,8 +20,7 @@ dtFrm = {
  }
 
 onFrmSub(myFrm?: NgForm) {
-    console.log(myFrm.form);
-   
+    console.log(myFrm.value);
   }
 
   ngOnInit() {

@@ -14,14 +14,14 @@ export const environment = {
     messagingSenderId: "581921898312"
   },
 
-  // fireBaseLogin :
-  // {
-  //   apiKey: "AIzaSyA5UR_RcGsXDucmekqJTGRvkZmdwwQtRYE",
-  //   authDomain: "firbaselogin-704e5.firebaseapp.com",
-  //   databaseURL: "https://firbaselogin-704e5.firebaseio.com",
-  //   projectId: "firbaselogin-704e5",
-  //   storageBucket: "",
-  //   messagingSenderId: "519031081001"
-  // }
+  fireBaseLogin :
+  {
+    apiKey: "AIzaSyA5UR_RcGsXDucmekqJTGRvkZmdwwQtRYE",
+    authDomain: "firbaselogin-704e5.firebaseapp.com",
+    databaseURL: "https://firbaselogin-704e5.firebaseio.com",
+    projectId: "firbaselogin-704e5",
+    storageBucket: "",
+    messagingSenderId: "519031081001"
+  }
 
 };

@@ -5,17 +5,15 @@
             <div class="account-wall">
                 <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                     alt="">
-                <form class="form-signin" (ngSubmit)="onFrmSub(myFrm)" #myFrm="ngForm">
+                <form #myFrm = "ngForm"
+                class="form-signin" (ngSubmit)="onFrmSub(myFrm)" #myFrm="ngForm">
                 <input type="text"
                  class="form-control" 
-                 placeholder="Email" required autofocus
-                  [(ngModel)]="dtFrm.eml" name="eml"
-                #usEml="ngModel">
+                 placeholder="Email" name="eml" required autofocus ngModel>
                 <input type="password"
                  class="form-control"
-                  placeholder="Password" 
-                  required  [(ngModel)]="dtFrm.pass" name="pass"
-                #usPass="ngModel">
+                  placeholder="Password"  name="pwd"
+                  required ngModel>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Sign in</button>
                 <label class="checkbox pull-left">

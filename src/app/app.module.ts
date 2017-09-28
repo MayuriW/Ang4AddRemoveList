@@ -10,19 +10,22 @@ import { FormsModule } from '@angular/forms';
 import { CourseService } from "./course.service";
 import {CourseComponent} from "./course.component";
 import { ClassObjComponent } from './class-obj/class-obj.component';
-import { AddItemComponent } from './add-item/add-item.component'
+import { AddItemComponent } from './add-item/add-item.component';
+import { SortArrayPipe } from './sort-array.pipe'
 
 @NgModule({
   declarations: [
+
+    SortArrayPipe,
     AppComponent,
     LoginComponent,
-    CourseComponent,
+    CourseComponent,    
     ClassObjComponent,
     AddItemComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
-    // AngularFireModule.initializeApp(environment.fireBaseLogin),
+    AngularFireModule.initializeApp(environment.fireBaseLogin),
     BrowserModule,
     AngularFireDatabaseModule,
     FormsModule

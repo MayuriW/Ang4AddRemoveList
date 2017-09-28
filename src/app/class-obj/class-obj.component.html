@@ -1,5 +1,5 @@
 <p>
-  {{obj.name}}
+  {{obj.name | uppercase}}
   {{obj.id}}
 </p>
 
@@ -9,3 +9,7 @@
 <ng-template #FirstTemplate>first Template </ng-template>
 
 <ng-template #SecondTemplate>second template </ng-template>
+
+{{ array | sortArray : 'descending' }}
+
+{{ array | sortArray : 'ascending' }}
